@@ -16,18 +16,18 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-premium-gradient bg-premium-texture flex flex-col items-center justify-center relative px-4 sm:px-8 overflow-hidden">
+    <div className="h-[100dvh] w-full bg-premium-gradient bg-premium-texture flex flex-col items-center justify-center relative px-4 sm:px-8 overflow-hidden">
       {/* Premium floating shapes for visual interest */}
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-premium-gold/5 blur-[100px]" />
       <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-premium-gold/5 blur-[120px]" />
       
       {/* Logo centered at the top */}
-      <div className="mb-10 animate-fade-in">
+      <div className="animate-on-mount animate-fade-in">
         <Logo />
       </div>
       
       {/* Main content */}
-      <div className="max-w-3xl mx-auto text-center space-y-6 relative z-10 animate-fade-in">
+      <div className="max-w-3xl mx-auto text-center space-y-4 relative z-10">
         {/* Headline */}
         <h1 className={cn(
           "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-on-mount animate-fade-in",
@@ -42,7 +42,7 @@ const Index = () => {
         </p>
         
         {/* Social Links */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 animate-on-mount animate-fade-in">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6 animate-on-mount animate-fade-in">
           <SocialLink 
             platform="instagram" 
             url="https://www.instagram.com/theorganisers.in" 
@@ -52,13 +52,6 @@ const Index = () => {
             url="https://youtube.com/@theorganisersin" 
           />
         </div>
-      </div>
-      
-      {/* Premium badge/indicator */}
-      <div className="absolute bottom-8 text-xs text-white/30 flex items-center gap-2 animate-on-mount animate-fade-in">
-        <span className="w-1 h-1 rounded-full bg-premium-gold"></span>
-        <span>PREMIUM EXPERIENCE</span>
-        <span className="w-1 h-1 rounded-full bg-premium-gold"></span>
       </div>
     </div>
   );
