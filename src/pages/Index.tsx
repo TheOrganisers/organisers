@@ -21,8 +21,8 @@ const Index = () => {
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-premium-gold/5 blur-[100px]" />
       <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-premium-gold/5 blur-[120px]" />
       
-      {/* Logo area */}
-      <div className="absolute top-8 left-4 sm:left-8 animate-fade-in">
+      {/* Logo centered at the top */}
+      <div className="mb-10 animate-fade-in">
         <Logo />
       </div>
       
