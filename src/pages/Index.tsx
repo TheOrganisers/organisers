@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Logo from '@/components/Logo';
 import SocialLink from '@/components/SocialLink';
+import StarField from '@/components/StarField';
 import { cn } from '@/lib/utils';
 
 const Index = () => {
@@ -17,6 +18,9 @@ const Index = () => {
 
   return (
     <div className="h-[100dvh] w-full bg-premium-gradient bg-premium-texture flex flex-col items-center justify-center relative px-4 sm:px-8 overflow-hidden">
+      {/* Stars in background */}
+      <StarField />
+      
       {/* Premium floating shapes for visual interest */}
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-premium-gold/5 blur-[100px]" />
       <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-premium-gold/5 blur-[120px]" />
