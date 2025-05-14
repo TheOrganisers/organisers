@@ -33,16 +33,16 @@ const Index = () => {
           "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-on-mount animate-fade-in",
           "bg-gradient-to-r from-white to-premium-champagne bg-clip-text text-transparent"
         )}>
-          Built for the Top 1% of Event Organizers
+          Built for the Top 1% of Event Organisers
         </h1>
         
         {/* Description */}
         <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed animate-on-mount animate-fade-in">
-          The Organizers is a curated community and content hub for India's most elite event professionals. Discover insights, inspiration, and interviews from the best in the industry.
+          The Organisers is a curated community and content hub for India's most elite event professionals. Discover insights, inspiration, and interviews from the best in the industry.
         </p>
         
-        {/* Social Links */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6 animate-on-mount animate-fade-in">
+        {/* Social Links - centered on mobile */}
+        <div className="flex flex-col items-center sm:flex-row gap-4 justify-center mt-6 animate-on-mount animate-fade-in">
           <SocialLink 
             platform="instagram" 
             url="https://www.instagram.com/theorganisers.in" 
